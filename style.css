@@ -1,0 +1,232 @@
+/* ================================ GLOBAL ======================================== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --blue: #3A93F3;
+}
+section {
+    margin-bottom: 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    z-index: 9;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 300ms;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    color: var(--blue);
+}
+a.button, button {
+    padding: 1em 3em;
+    border-radius: 3rem;
+    border: 1px solid white;
+    transition: all 300ms;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+}
+a.button:hover, button:hover {
+    color: white;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.row {
+    display: flex;
+}
+.col {
+    width: 50%;
+    padding: 1%;
+}
+
+
+/* ==================================== HEADER ================================= */
+.header-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-link > ul {
+    display: flex;
+}
+.header-wrapper a {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 30px 20px 0;
+    text-transform: uppercase;
+}
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 130%;
+}
+.large {
+    font-size: 150%;
+}
+/* Dropdown */
+.header-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 200ms;
+}
+.dropdown:hover > .header-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.header-dropdown {
+    background-color: rgba(58,147,243,.5);
+}
+.header-dropdown a {
+    padding: 10px 15px;
+    text-transform: initial;
+}
+.header-dropdown li {
+    border-bottom: 1px solid var(--blue);
+    width: 150px;
+}
+
+
+
+
+/* ==================================== HERO ===================================== */
+section.hero {
+    background: url("./images/background-01.jpg") no-repeat top center;
+    background-size: cover;
+    max-width: 100%;
+}
+.hero-text {
+    padding: 200px 0 270px;
+    margin: auto;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+}
+/* Button */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.button-wrapper > a {
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* ============================================== INTRO ==================================== */
+section.intro {
+    padding: 30px;
+    position: relative;
+    margin: -150px auto 100px;
+    background-color: white;
+    box-shadow: 0px 15px 15px 0px rgb(0 0 0 / 10%);
+}
+.intro .row .col {
+    width: 25%;
+    padding: 1%;
+}
+.intro .row .col:first-child {
+    width: 50%;
+}
+
+
+
+/* ============================================= SERVICES ==================================== */
+section.services {
+    text-align: center;
+}
+.services .row {
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.services .col {
+    padding: 30px 15px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    width: 20%;
+}
+.services img.icon {
+    width: 50%;
+}
+
+
+
+
+
+/* ============================================= FOOTER ==================================== */
+footer {
+    margin-top: 50px;
+    background: url("./images/background-03.jpg") no-repeat top center;
+    background-size: cover;
+    color: rgb(168, 168, 168);
+}
+.footer-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+}
+footer h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+footer form input { /* Col 2 */
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 200ms;
+    border: none;
+    margin-top: 10px;
+}
+footer form input:focus {
+    outline: none;
+    background-color: var(--blue);
+}
+footer form button {
+    display: block;
+    color: white;
+    margin-top: 10px;
+} 
+footer ul a { /* Col 3 */
+    display: inline-block;
+    color: rgb(168, 168, 168);
+    margin-bottom: 10px;
+}
+
+
+
+/* ======================================= CREDIT ===================================== */
+section.credit {
+    max-width: 100%;
+    background-color: #202020;
+    padding: 20px 0;
+    color: #ababab;
+}
+.credit .row {
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+}
